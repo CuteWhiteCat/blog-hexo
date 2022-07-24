@@ -1,5 +1,7 @@
 ---
 title: Hello World
+banner_img: https://i.pinimg.com/originals/de/c0/e1/dec0e1d86817d93e3a89b4f25cb15ab7.jpg
+
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
@@ -7,7 +9,7 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 
 ### Create a new post
 
-``` bash
+``` js
 $ hexo new "My New Post"
 ```
 
