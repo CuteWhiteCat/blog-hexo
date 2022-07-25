@@ -45,16 +45,22 @@ navbar:
     # Navigation bar menu. `key` is used to associate languages/*.yml. If there is no association, the value of `key` itself will be displayed; if `icon` is a css class, it can be omitted; adding `name` can force the display of the specified name
     menu:
         - { key: "home", link: "/", icon: "iconfont icon-home-fill" }
+        - {
+              key: "archive",
+              link: "/archives/",
+              icon: "iconfont icon-archive-fill",
+          }
+        - {
+              key: "category",
+              link: "/categories/",
+              icon: "iconfont icon-category-fill",
+          }
+        - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
         - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
         - {
               key: "Link Tree",
               link: "https://link.whitecat.tk",
               icon: "iconfont icon-link-fill",
-          }
-        - {
-              key: "Github",
-              link: "https://github.com/CuteWhiteCat",
-              icon: "iconfont icon-github-fill",
           }
 
 custom_css:
@@ -68,8 +74,119 @@ index:
         enable: true
         text: Welcome To WhiteCat's Blog
 
+# 關於頁面
+about:
+    avatar: /images/WhiteCat.png
+    name: "白貓"
+    intro: "遊戲愛好者 / 前端實習工 / 成電弱神"
+    icons:
+        - {
+              class: "iconfont icon-instagram-fill",
+              link: "https://www.instagram.com/whitecatstudy/",
+              tip: "Instagram",
+          }
+        - {
+              class: "iconfont icon-github-fill",
+              link: "https://github.com/CuteWhiteCat",
+              tip: "Github",
+          }
+        - {
+              class: "iconfont icon-mail",
+              link: "mailto:awacutewhitecat@gmail.com",
+              tip: "寄郵件",
+          }
+
+#---------------------------
+# 归档页
+# Archive Page
+#---------------------------
+archive:
+    banner_img: https://c0.wallpaperflare.com/preview/423/1002/349/plant-leaf-aquatic-water.jpg
+    banner_img_height: 60
+    banner_mask_alpha: 0.3
+
+#---------------------------
+# 分类页
+# Category Page
+#---------------------------
+category:
+    enable: true
+    banner_img: https://i.pinimg.com/originals/97/85/1f/97851f8076c6b29ed2cbb446dead2eb6.jpg
+    banner_img_height: 60
+    banner_mask_alpha: 0.6
+
+#---------------------------
+# 标签页
+# Tag Page
+#---------------------------
+tag:
+    enable: true
+    banner_img: https://images.unsplash.com/photo-1526925210199-6db37fd596af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2t5JTIwaGlnaHxlbnwwfHwwfHw%3D&w=1000&q=80
+    banner_img_height: 60
+    banner_mask_alpha: 0.5
+    tagcloud:
+        min_font: 15
+        max_font: 30
+        unit: px
+        start_color: "#BBBBEE"
+        end_color: "#337ab7"
+
 # 字體
-font:  # 主题字体配置
-  font_size: 16px  # 全局字号
-  font_family: AppleGothic  # 全局字体族
-  code_font_size: 85%  # 代码的字号
+font: # 主题字体配置
+    font_size: 16px # 全局字号
+    font_family: AppleGothic # 全局字体族
+    code_font_size: 85% # 代码的字号
+
+# 日期/字數/閱讀時長/閱讀數
+post:
+    meta:
+        author: # 作者，优先根据 front-matter 里 author 字段，其次是 hexo 配置中 author 值
+            enable: true
+        date: # 文章日期，优先根据 front-matter 里 date 字段，其次是 md 文件日期
+            enable: true
+            format: "LL a" # 格式参照 ISO-8601 日期格式化
+        wordcount: # 字数统计
+            enable: true
+            format: "{} 字" # 显示的文本，{}是数字的占位符（必须包含)，下同
+        min2read: # 阅读时间
+            enable: true
+            format: "{} 分钟"
+        views: # 阅读次数
+            enable: false
+            source: "leancloud" # 统计数据来源，可选：leancloud | busuanzi   注意不蒜子会间歇抽风
+            format: "{} 次"
+    comments:
+        enable: true
+        type: utterances
+
+#---------------------------
+# 评论插件
+# Comment plugins
+#
+# 开启评论需要先设置上方 `post: comments: enable: true`，然后根据 `type` 设置下方对应的评论插件参数
+# Enable comments need to be set `post: comments: enable: true`, then set the corresponding comment plugin parameters below according to `type`
+#---------------------------
+
+# Utterances
+# 基于 GitHub Issues
+# Based on GitHub Issues
+# See: https://utteranc.es
+utterances:
+    repo: CuteWhiteCat/blog-hexo
+    issue_term: pathname
+    label: #
+    theme: github-light
+    theme_dark: dark-blue
+
+
+#---------------------------
+# 页脚
+# Footer
+#---------------------------
+footer:
+  # 页脚第一行文字的 HTML，建议保留 Fluid 的链接，用于向更多人推广本主题
+  # HTML of the first line of the footer, it is recommended to keep the Fluid link to promote this theme to more people
+  content: '
+    <h6>WhiteCat © 2022 All rights reserved.</h6>
+  '
+

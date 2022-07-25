@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@fontsource/fira-code@^4.5.10":
+  "integrity" "sha512-CF6cBJZcpuW+qxtr7JZt3kPwEHj0xWYgsRr7q3tGhkIqEmxdJ6Omvw61LEFQuRXeAwOnXBGZr42qTrO+vCzvAQ=="
+  "resolved" "https://registry.npmjs.org/@fontsource/fira-code/-/fira-code-4.5.10.tgz"
+  "version" "4.5.10"
+
 "@socket.io/component-emitter@~3.1.0":
   "integrity" "sha512-+9jVqKhRSpsc591z5vX+X5Yyw+he/HCB4iQ/RYxw35CEPaY1gnsNE43nf9n9AaYjAQrTiI/mOwKUKdUs9vf7Xg=="
   "resolved" "https://registry.npmjs.org/@socket.io/component-emitter/-/component-emitter-3.1.0.tgz"
