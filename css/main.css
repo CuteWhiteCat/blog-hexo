@@ -1244,7 +1244,6 @@ i.iconfont {
 }
 .markdown-body pre code.hljs {
   padding: 0;
-  font-family: "Fira Code", monospace;
   font-weight: 500;
 }
 .markdown-body pre[class*="language-"] {
