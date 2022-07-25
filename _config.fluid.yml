@@ -71,5 +71,5 @@ index:
 # 字體
 font:  # 主题字体配置
   font_size: 16px  # 全局字号
-  font_family: PingFang TC, sans-serif   # 全局字体族
+  font_family: AppleGothic  # 全局字体族
   code_font_size: 85%  # 代码的字号
