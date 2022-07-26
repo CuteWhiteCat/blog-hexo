@@ -46,7 +46,7 @@ navbar:
     menu:
         - { key: "home", link: "/", icon: "iconfont icon-home-fill" }
         - {
-              key: "archive",
+              key: "存檔",
               link: "/archives/",
               icon: "iconfont icon-archive-fill",
           }
@@ -73,6 +73,12 @@ index:
     slogan:
         enable: true
         text: Welcome To WhiteCat's Blog
+    post_meta:
+        date: true
+        category: true
+        tag: true
+    auto_excerpt:
+        enable: true
 
 # 關於頁面
 about:
@@ -150,7 +156,7 @@ post:
             format: "{} 字" # 显示的文本，{}是数字的占位符（必须包含)，下同
         min2read: # 阅读时间
             enable: true
-            format: "{} 分钟"
+            format: "{} 分鐘"
         views: # 阅读次数
             enable: false
             source: "leancloud" # 统计数据来源，可选：leancloud | busuanzi   注意不蒜子会间歇抽风
