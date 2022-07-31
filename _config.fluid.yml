@@ -11,21 +11,13 @@
 # You can get more detailed help from the guide
 #---------------------------
 
-#---------------------------
-# 全局
-# Global
-#---------------------------
-
 # 浏览器标签页中的标题分隔符，效果： 文章名 - 站点名
-# Title separator in browser tab, eg: article - site
 tab_title_separator: " | "
 
 # 强制所有链接升级为 HTTPS（适用于图片等资源出现 HTTP 混入报错）
-# Force all links to be HTTPS (applicable to HTTP mixed error)
 force_https: true
 
-# 代码块的增强配置
-# Enhancements to code blocks
+# Code 塊
 code:
     copy_btn: true
     highlight:
@@ -36,13 +28,12 @@ code:
             style: "atom-one-dark"
             bg_color: true
 
+# Navbar
 navbar:
-    # 导航栏左侧的标题，为空则按 hexo config 中 `title` 显示
-    # The title on the left side of the navigation bar. If empty, it is based on `title` in hexo config
+    # Navbar Title
     blog_title: 白貓's blog
 
-    # 导航栏菜单，可自行增减，key 用来关联 languages/*.yml，如不存在关联则显示 key 本身的值；icon 是 css class，可以省略；增加 name 可以强制显示指定名称
-    # Navigation bar menu. `key` is used to associate languages/*.yml. If there is no association, the value of `key` itself will be displayed; if `icon` is a css class, it can be omitted; adding `name` can force the display of the specified name
+    # Navbar 菜單
     menu:
         - { key: "home", link: "/", icon: "iconfont icon-home-fill" }
         - {
@@ -63,6 +54,7 @@ navbar:
               icon: "iconfont icon-link-fill",
           }
 
+# 自訂義 css
 custom_css:
     - /css/mac.css
     - /css/font.css
@@ -80,7 +72,7 @@ index:
     auto_excerpt:
         enable: true
 
-# 關於頁面
+# 關於頁
 about:
     avatar: /images/WhiteCat.png
     name: "白貓"
@@ -102,29 +94,20 @@ about:
               tip: "寄郵件",
           }
 
-#---------------------------
-# 归档页
-# Archive Page
-#---------------------------
+# 存檔頁
 archive:
     banner_img: https://c0.wallpaperflare.com/preview/423/1002/349/plant-leaf-aquatic-water.jpg
     banner_img_height: 60
     banner_mask_alpha: 0.3
 
-#---------------------------
-# 分类页
-# Category Page
-#---------------------------
+# 分類頁
 category:
     enable: true
     banner_img: https://i.pinimg.com/originals/97/85/1f/97851f8076c6b29ed2cbb446dead2eb6.jpg
     banner_img_height: 60
     banner_mask_alpha: 0.6
 
-#---------------------------
-# 标签页
-# Tag Page
-#---------------------------
+# 標籤頁
 tag:
     enable: true
     banner_img: https://images.unsplash.com/photo-1526925210199-6db37fd596af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2t5JTIwaGlnaHxlbnwwfHwwfHw%3D&w=1000&q=80
@@ -138,45 +121,34 @@ tag:
         end_color: "#337ab7"
 
 # 字體
-font: # 主题字体配置
-    font_size: 16px # 全局字号
-    font_family: AppleGothic # 全局字体族
-    code_font_size: 85% # 代码的字号
+font: 
+    font_size: 16px 
+    font_family: AppleGothic 
+    code_font_size: 85%
 
 # 日期/字數/閱讀時長/閱讀數
 post:
     meta:
-        author: # 作者，优先根据 front-matter 里 author 字段，其次是 hexo 配置中 author 值
+        author: 
             enable: true
-        date: # 文章日期，优先根据 front-matter 里 date 字段，其次是 md 文件日期
+        date: 
             enable: true
-            format: "LL a" # 格式参照 ISO-8601 日期格式化
-        wordcount: # 字数统计
+            format: "LL a" 
+        wordcount: 
             enable: true
-            format: "{} 字" # 显示的文本，{}是数字的占位符（必须包含)，下同
-        min2read: # 阅读时间
+            format: "{} 字" 
+        min2read: 
             enable: true
             format: "{} 分鐘"
-        views: # 阅读次数
+        views: 
             enable: false
-            source: "leancloud" # 统计数据来源，可选：leancloud | busuanzi   注意不蒜子会间歇抽风
+            source: "leancloud" 
             format: "{} 次"
     comments:
         enable: true
         type: utterances
 
-#---------------------------
-# 评论插件
-# Comment plugins
-#
-# 开启评论需要先设置上方 `post: comments: enable: true`，然后根据 `type` 设置下方对应的评论插件参数
-# Enable comments need to be set `post: comments: enable: true`, then set the corresponding comment plugin parameters below according to `type`
-#---------------------------
-
-# Utterances
-# 基于 GitHub Issues
-# Based on GitHub Issues
-# See: https://utteranc.es
+# Utterances 評論插件
 utterances:
     repo: CuteWhiteCat/blog-hexo
     issue_term: pathname
@@ -185,13 +157,8 @@ utterances:
     theme_dark: dark-blue
 
 
-#---------------------------
-# 页脚
 # Footer
-#---------------------------
 footer:
-  # 页脚第一行文字的 HTML，建议保留 Fluid 的链接，用于向更多人推广本主题
-  # HTML of the first line of the footer, it is recommended to keep the Fluid link to promote this theme to more people
   content: '
     <h6>WhiteCat © 2022 All rights reserved.</h6>
   '
