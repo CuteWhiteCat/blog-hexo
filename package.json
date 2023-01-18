@@ -12,7 +12,7 @@
     "version": "6.2.0"
   },
   "dependencies": {
-    "@fontsource/fira-code": "^4.5.10",
+    "@fontsource/fira-code": "^4.5.13",
     "hexo": "^6.2.0",
     "hexo-browsersync": "^0.3.0",
     "hexo-deployer-git": "^3.0.0",
